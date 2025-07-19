@@ -1,0 +1,56 @@
+nav {
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    padding-block: 2rem;
+
+
+    & img {
+        width: 2rem;
+        height: 2rem;
+        transition: transform 500ms;
+
+    }
+
+    & a {
+        position: relative;
+
+        & span {
+            position: absolute;
+            top: -.5rem;
+            right: -.5rem;
+            background-color: var( --color-snitap-sun);
+            width: 1.25rem;
+            height: 1.25rem;
+            font: var(--Span);
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+
+        }
+    }
+
+
+
+
+
+    & #Logo-Snitap img {
+        transition: transform 500ms;
+    }
+
+    & #Logo-Snitap img:hover {
+        transform: rotate(90deg);
+    }
+
+     & #Icon-Shop img {
+        transition: transform 500ms;
+    }
+
+    & #Icon-Shop img:hover {
+        transform: rotate(-30deg);
+    }
+}
+

@@ -22,4 +22,21 @@
 
 }
 
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+.auto-flow-column {
+    grid-auto-flow: column;
+}
+
+
+
+
+
+
+
+
+
 
