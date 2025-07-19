@@ -1,0 +1,25 @@
+:root {
+
+  --color-snitap-sun: #FFCD1E;
+  --color-snitap-sky-mid: #06B6D4;
+  --color-snitap-sky-light: #67E8F9;
+  --color-snitap-joy-mid: #DB2777;
+  --color-snitap-joy-light: #F472B6;
+  --color-snitap-leaf-mid: #16A34A;
+
+
+  --color-text: #000000;
+  --color-highlights: #000000;
+  --color-background: #FAFAFA;
+
+  --font-family-Montserrat: "Montserrat", sans-serif;
+  --font-family-Syne: "Syne", sans-serif;
+
+--heading-01: 700 4rem/150% var(--font-family-Syne);
+  --heading-02: 700 2.5rem/120% var(--font-family-Syne);
+  --Button-label: 500 1rem/150% var(--font-family-Montserrat);
+  --Span: 500 .87rem/150% var(--font-family-Montserrat);
+
+}
+
+

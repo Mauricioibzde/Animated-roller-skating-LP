@@ -1,0 +1,39 @@
+h1 {
+    font: var(--Button-label);
+}
+
+.btn-buy {
+   & button {
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .75rem;
+    padding: .87rem 1.5rem;
+    max-height: 4.5rem;
+    max-width:17rem;
+    border-radius: 5rem;
+    border: none;
+    background-color: var(--color-snitap-sun);
+    text-transform: uppercase;
+    font: var(--Button-label);
+    
+   }
+}
+
+.btn-play {
+   & button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .75rem;
+    padding: .87rem 1.5rem;
+    max-height: 4.5rem;
+    max-width:17rem;
+    border-radius: 5rem;
+    border: none;
+    background-color: transparent;
+    text-transform: uppercase;
+    font: var(--Button-label);
+   }
+}
+
