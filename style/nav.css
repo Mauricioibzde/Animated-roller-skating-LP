@@ -3,8 +3,9 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
     padding-block: 2rem;
+    margin-inline: auto;
+    padding: 2.5rem 2rem;
 
 
     & img {

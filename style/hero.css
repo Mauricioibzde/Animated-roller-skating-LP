@@ -1,31 +1,111 @@
-.hero {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: 1fr 1fr;
-    max-height: 35.5rem;
-    
-}
-.title {
-    font: var(--heading-01);
-    grid-column: span 2/2;
 
-    & span {
-        color: var(--color-snitap-sky-mid);
-    }
 
-    & h1 div {
-        display: inline-block;
-        width: min-content;
-        vertical-align: bottom;
-    }
+
+section.hero {
+  max-width: 80rem;
+  width: 100%;
+  padding: 2.5rem 2rem;
+  margin-inline: auto;
+
+  & h1 {
+    max-width: 40rem;
+  }
+
+  & h1 div {
+    display: inline-block;
+    overflow: hidden;
+    height: 6rem;
+    width: min-content;
+    vertical-align: bottom;
+  }
+
+  & h1 span:nth-child(1) , h1 span:nth-child(4) {
+    color: var(--color-snitap-sky-mid);
+  }
+   & h1 span:nth-child(2) {
+    color: var(--color-snitap-joy-mid);
+  }
+
+   & h1 span:nth-child(3) {
+    color: var(--color-snitap-leaf-mid);
+  }
+
+  h1 span {
+    display: block;
+    animation: slideUp 6s infinite ease;
+  }
 }
+
+@keyframes slideUp {
+  /* Radical (posição 0rem) */
+  0%, 22% {
+    transform: translateY(0);
+  }
+
+  /* Transição para Divertido */
+  23% {
+    transform: translateY(calc(-6rem - 1rem));
+  }
+  25% {
+    transform: translateY(calc(-6rem + 1rem));
+  }
+  27% {
+    transform: translateY(calc(-6rem - .5rem));
+  }
+  29% {
+    transform: translateY(calc(-6rem + .5rem));
+  }
+
+  /* Divertido estático */
+  33%, 55% {
+    transform: translateY(-6rem);
+  }
+
+  /* Transição para Saudável */
+  56% {
+    transform: translateY(calc(-12rem - 1rem));
+  }
+  58% {
+    transform: translateY(calc(-12rem + 1rem));
+  }
+  60% {
+    transform: translateY(calc(-12rem - .5rem));
+  }
+  62% {
+    transform: translateY(calc(-12rem + .5rem));
+  }
+
+  /* Saudável estático */
+  66%, 88% {
+    transform: translateY(-12rem);
+  }
+
+  /* Transição para [próximo ou reinício] */
+  89% {
+    transform: translateY(calc(-18rem - 1rem));
+  }
+  91% {
+    transform: translateY(calc(-18rem + 1rem));
+  }
+  93% {
+    transform: translateY(calc(-18rem - .5rem));
+  }
+  95% {
+    transform: translateY(calc(-18rem + .5rem));
+  }
+
+  100% {
+    transform: translateY(-18rem);
+  }
+}
+
 
 
 .btn-buy {
  
    
    & button {
-     padding-inline: 1rem;
+    padding-inline: 1rem;
     min-height: 3rem;
     display: flex;
     justify-content: center;
