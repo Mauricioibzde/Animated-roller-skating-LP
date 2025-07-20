@@ -1,40 +1,80 @@
 
-
-
-
-.patins-animation {
-   width: 35.5rem;
+.position-relative {
+    position: relative;
+    width: 35.5rem;
     height: 35.5rem;
-
-  
-
-
- .content {
- position: relative;
- left: 5.5rem;
-
-  
- }
-
- & img {
-   position: absolute;
-      
- }
-
-  & img:nth-child(1) {
    
 
-  }
+    & img {
+      display: block;
+        position: absolute;
+        width: 35.5rem;
+        height: 35.5rem;
+    }
 
-  & img:nth-child(3) {
-    width: 2rem;
- }
+      & img:nth-child(3) , img:nth-child(4) {
+        width: 3rem;
+    }
 
-  & img:nth-child(4) {
-    width: 2rem;
- }
+       & img:nth-child(1) {
+        width: 94%;
+        top: 3%;
+        left: 3%;
+        z-index: 0;
+        transform: translateX(200%);
+        animation: slideIn 2s 200ms ease forwards;
+       }
+
+        & img:nth-child(2) {
+        z-index: 4;
+         transform: translateX(200%);
+        animation: slideIn 2s 300ms ease forwards;
+       }
+
+     & img:nth-child(3) {
+      z-index: 2;
+        opacity: 0;
+        top: 10rem;
+        left: 0;
+        width: 5rem;
+        height: 5rem;
+        transform: translateX(100rem);
+        animation: slideIn 1.5s 400ms ease forwards , appear 800ms 200ms  forwards;
+     }
+       & img:nth-child(4) {
+        z-index: 3;
+        position: relative;
+        top: 20rem;
+        left: 90%;
+        width: 5rem;
+        height: 5rem;
+        transform: translateX(100rem);
+        animation: slideIn 1.5s 400ms ease forwards , appear 800ms 200ms  forwards;
+     }
 
 
 
 
 }
+
+   @keyframes slideIn {
+      50% {
+        transform: translateX(-1rem);
+      }
+
+      75% {
+        transform: translateX(+1rem);
+      }
+       100% {
+        transform: translateX(0);
+       }
+
+       
+     }
+
+     @keyframes appear {
+      to {
+        opacity: 1;
+      }
+     }
+

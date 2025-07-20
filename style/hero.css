@@ -3,10 +3,10 @@
 div.hero {
   max-width: 80rem;
   padding: 2.5rem 2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   grid-auto-flow: column;
   align-items: center;
+  justify-content: space-between;
 
 
   
