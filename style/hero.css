@@ -1,6 +1,6 @@
 
 
-div.hero {
+section.hero {
   max-width: 80rem;
   padding: 2.5rem 2rem;
   display: flex;
@@ -8,11 +8,6 @@ div.hero {
   align-items: center;
   justify-content: space-between;
 
-
-  
-
- 
-  
 
   & h1 {
     max-width: 40rem;
