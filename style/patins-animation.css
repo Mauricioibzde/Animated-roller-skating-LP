@@ -1,0 +1,46 @@
+
+
+
+
+.patins-animation {
+   width: 35.5rem;
+    height: 35.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+     display: inline-block;
+    width: min-content;
+    position: relative;
+  
+
+
+ .content {
+    display: flex;
+  align-items: center;       /* Alinha verticalmente */
+  justify-content: space-between; /* Distribui horizontalmente */
+  position: relative;
+
+  
+ }
+
+ & img {
+      
+ }
+
+  & img:nth-child(1) {
+   
+
+  }
+
+  & img:nth-child(3) {
+    width: 2rem;
+ }
+
+  & img:nth-child(4) {
+    width: 2rem;
+ }
+
+
+
+
+}
