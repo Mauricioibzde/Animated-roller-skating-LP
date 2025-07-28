@@ -1,0 +1,46 @@
+nav.footer {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 2rem;
+    margin-inline: auto;
+    padding: 2.5rem 2rem;
+
+    &>a {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font: var(--heading-03);
+    }
+
+    & .social-media {
+        display: flex;
+        gap: 1rem;
+        
+    }
+
+    & .menu-text-footer {
+        display: flex;
+        gap: 1rem;
+
+        & a {
+            font: var(--Span);
+            height: 2rem;
+            
+           
+            
+        }
+
+          & a:hover {
+            font: var(--Span);
+            border-bottom: solid .2rem var( --color-snitap-sky-mid);
+            
+            
+        }
+    }
+
+
+}
+
+

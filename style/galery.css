@@ -23,67 +23,73 @@
     align-items: center;
     gap: 1rem;
 
-    & figure {
-        height: 100%;
-        border-radius: 2.5rem;
-        overflow: hidden;
-        position: relative;
-        
-        & > img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          
-          transition-duration: 1s;
-        
-        }
-
-          &:hover > img {
-           scale: 1.1;
-          
-        }
-        
-      & figcaption {
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        gap: .5rem;
-        transform: translateY(0);
-        position: relative;
-        bottom: 3rem;
-        right: 2rem;
-        width: 100%;
-        transform: translateY(200%);
-        overflow: hidden;
-        animation: figcaption-animation 1s 800ms forwards;
-
-        & img {
-          width: 2rem;
-        }
-
-      }
-   
-        
+  figure {
+      height: 100%;
+      border-radius: 2.5rem;
+      overflow: hidden;
+      position: relative;
     }
-              & figure:nth-child(1) {
-          grid-area: A ;
-        }
-         & figure:nth-child(2) {
-          grid-area: B;
-        }
-         & figure:nth-child(3) {
-          grid-area: C ;
-        }
-         & figure:nth-child(4) {
-          grid-area: D ;
-        }
+  
+    figure > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 1s;
+    }
+  
+    figure:hover > img {
+      transform: scale(1.1);
+    }
+  
+    figure figcaption {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 0.5rem;
+      padding-inline: 1rem;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 3.5rem;
+      transform: translateY(200%);
+      transition: transform 0.5s ease;
+      background: linear-gradient(#02020200 , #0202025d ,#02020280);
+      font: var(--Span);
      
-  }
+
+     
+     
+    }
+  
+    figure:hover figcaption {
+      transform: translateY(0);
+     
+      
+      
+    }
+  
+    figure figcaption img {
+      width: 2rem;
+    }
+
 }
-@keyframes figcaption-animation {
-  100% {
-    transform: translateY(0);
-  }
+
+& figure:nth-child(1) {
+  grid-area: A ;
 }
+  & figure:nth-child(2) {
+  grid-area: B;
+}
+  & figure:nth-child(3) {
+  grid-area: C ;
+}
+  & figure:nth-child(4) {
+  grid-area: D ;
+}
+
+}
+
+
 
  
+
