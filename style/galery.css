@@ -18,7 +18,6 @@
     grid-template-areas: 
     "A B B"
     "C C D";
-    gap: 1.5rem;
     justify-content: center;
     align-items: center;
     gap: 1rem;
@@ -34,7 +33,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: transform 1s;
+      transition: transform 800ms;
     }
   
     figure:hover > img {
@@ -52,7 +51,7 @@
       width: 100%;
       height: 3.5rem;
       transform: translateY(200%);
-      transition: transform 0.5s ease;
+      transition: transform 800ms ease;
       background: linear-gradient(#02020200 , #0202025d ,#02020280);
       font: var(--Span);
       color:white;
